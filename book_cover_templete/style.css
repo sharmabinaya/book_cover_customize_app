@@ -47,15 +47,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: sticky;
-            top: 2rem; /* Sticks the panel to the top of its container */
-            height: calc(100vh - 4rem);
+            flex-grow: 1;
+            min-width: 800px;
         }
         .controls-panel h2, .preview-panel h2 {
             font-size: 1.75rem;
             font-weight: 700;
             color: #222;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
         }
         .control-section {
             margin-bottom: 1.5rem;
@@ -144,8 +143,5 @@
     text-align: center;
     margin-top: 2rem;
     font-size: 0.875rem;
-    color: #6b7280;
-    line-height: 1.5;
     padding-top: 1rem;
-    border-top: 1px solid #e2e8f0;
 }
