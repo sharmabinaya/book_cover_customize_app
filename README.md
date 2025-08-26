@@ -1,6 +1,6 @@
 # 📚 My Book Cover - Professional Book Cover Generator
 
-**My Book Cover **is a simple yet powerful web-based tool that allows authors and designers to create stunning, complete book covers with ease. It provides a real-time preview and exports high-resolution, print-ready files suitable for professional printing.
+****CoverCraft**** is a simple yet powerful web-based tool that allows authors and designers to create stunning, complete book covers with ease. It provides a real-time preview and exports high-resolution, print-ready files suitable for professional printing.
 
 ### ✨ Features
 
@@ -43,6 +43,6 @@ my book cover/
 
 ### 📜 License
 
-**© 2024 my book cover - All rights reserved.**
+**© 2024 Covercraft - All rights reserved.**
 
 **This project is not open source and is intended for educational purposes.**
