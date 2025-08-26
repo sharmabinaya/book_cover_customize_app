@@ -157,8 +157,18 @@ class BookCoverGenerator {
             case 'back-cover-text':
                 this.state.backCoverText = value;
                 break;
+            case 'book-size':
+                this.state.size = value;
+                break;
+            // Corrected: Explicitly handle these two IDs to ensure proper camelCase
+            case 'design-template':
+                this.state.template = value;
+                break;
+            case 'color-scheme':
+                this.state.colorScheme = value;
+                break;
             default:
-                // Convert ID from "book-size" to "bookSize" for state object
+                // Fallback for other inputs, though the explicit cases are safer
                 this.state[id.replace(/-/g, '')] = value;
                 break;
         }
