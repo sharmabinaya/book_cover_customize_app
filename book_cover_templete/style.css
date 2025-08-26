@@ -51,18 +51,11 @@
             top: 2rem; /* Sticks the panel to the top of its container */
             height: calc(100vh - 4rem);
         }
-        .controls-panel h2{
+        .controls-panel h2, .preview-panel h2 {
             font-size: 1.75rem;
             font-weight: 700;
             color: #222;
             margin-bottom: 1.5rem;
-        }
-        .preview-panel h2 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #222;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
         }
         .control-section {
             margin-bottom: 1.5rem;
@@ -145,12 +138,14 @@
             border-radius: 0.75rem;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-
+        
         /* Updated footer styles for better visibility and spacing */
     .preview-info {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.875rem;
+    color: #6b7280;
     line-height: 1.5;
     padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
 }
