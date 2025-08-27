@@ -4,13 +4,16 @@
 
 ### ✨ Features
 
-* **Real-time Preview** **: See your full cover (front, spine, and back) update instantly as you type and change settings.**
-* **Complete Cover Design** **: Generate a full wrap-around cover with distinct sections for the back cover, spine, and front cover.**
-* **Customizable Templates** **: Choose from a variety of professionally designed templates and color schemes to match the mood of your book.**
-* **Configurable Layout** **: Adjust the book size and spine width to match your publication's exact specifications.**
-* **High-Resolution Export** **: Download a print-ready PNG file at professional printing quality (300 DPI), complete with bleed margins.**
-* **Fully Client-Side** **: The application runs entirely in your browser, ensuring your designs are private and no internet connection is required after the initial load.**
-* **Responsive Design** **: The interface is optimized to work on both desktop and mobile devices.**
+* **Real-time Preview** **:** See your full cover (front, spine, and back) update instantly as you type and change settings.
+* **Complete Cover Design** **:** Generate a full wrap-around cover with distinct sections for the back cover, spine, and front cover.
+* **Customizable Templates** **:** Choose from a variety of professionally designed templates and color schemes to match the mood of your book.
+* **Configurable Layout** **:** Adjust the book size and spine width to match your publication's exact specifications.
+* **High-Resolution Export** **:** Download a print-ready PNG file at professional printing quality (300 DPI), complete with bleed margins.
+* **Fully Client-Side** **:** The application runs entirely in your browser, ensuring your designs are private and no internet connection is required after the initial load.
+* **Responsive Design** **:** The interface is optimized to work on both desktop and mobile devices.
+* **Typography Design** **:** The interface is optimized to allow user to choose from diffrent front as they want.
+* **Margin and Bleed of Page Design** **:** The interface is help user to keep the design and text within the mergin and bleed that shows the in  preview. this will help to see the user if the text or image is being cut off while priting.
+* **Image Integration layout (AI Suggestion) (prebuild) Design** **:** ..... Working in process
 
 ### 🚀 How to Use
 
