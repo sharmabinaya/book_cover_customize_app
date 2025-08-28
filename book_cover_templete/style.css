@@ -35,9 +35,9 @@
     /* Update h1 and p colors for visibility on the wave background */
     .landing-page h1 {
         font-family: 'Quintessential', cursive;
-        font-size: 54px;
+        font-size: 70px;
     }
-    
+
     .landing-page p {
         color: #34495e;
      }
