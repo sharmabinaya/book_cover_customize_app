@@ -27,7 +27,16 @@
             font-family: 'Playfair Display', serif;
             font-style: italic;
         }
-
+        .btn-primary-nav {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+        }
+        
+        .btn-primary-nav:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
         .landing-page {
             z-index: 1;
             position: relative;
