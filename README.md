@@ -1,4 +1,4 @@
-# 📚 My Book Cover - Professional Book Cover Generator
+# 📚Book Cover - Professional Book Cover Generator
 
 ****CoverCraft**** is a simple yet powerful web-based tool that allows authors and designers to create stunning, complete book covers with ease. It provides a real-time preview and exports high-resolution, print-ready files suitable for professional printing.
 
