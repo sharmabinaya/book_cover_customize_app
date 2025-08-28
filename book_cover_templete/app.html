@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Cover Generator</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wave-bg"></div>
+    <div class="container">
+        <header class="text-center">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-2">CoverCraft</h1>
+            <p class="text-gray-600 max-w-lg mx-auto">Create professional book covers with a real-time preview and export for printing.</p>
+        </header>
+
+        <main class="app-grid">
+            <!-- Controls Panel -->
+            <div class="controls-panel">
+                <h2>Design Your Cover</h2>
+                <p class="text-gray-600 mb-4">Fill in the details below to customize your book cover. The preview will update in real-time.</p>
+                
+                <div class="control-section">
+                    <h3 class="section-title">Cover Details</h3>
+                    <div class="control-group">
+                        <label for="book-title">Book Title:</label>
+                        <input type="text" id="book-title" placeholder="Enter your book title" maxlength="50">
+                    </div>
+                    <div class="control-group">
+                        <label for="author-name">Author Name:</label>
+                        <input type="text" id="author-name" placeholder="Enter author name" maxlength="30">
+                    </div>
+                    <div class="control-group">
+                        <label for="back-cover-text">Back Cover Description:</label>
+                        <textarea id="back-cover-text" placeholder="Enter book description or summary" maxlength="500" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3 class="section-title">Design & Layout</h3>
+                    <div class="control-group">
+                        <label for="design-template">Design Template:</label>
+                        <select id="design-template">
+                            <!-- Options will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="color-scheme">Color Scheme:</label>
+                        <select id="color-scheme">
+                            <option value="blue">Ocean Blue</option>
+                            <option value="green">Forest Green</option>
+                            <option value="red">Crimson Red</option>
+                            <option value="purple">Royal Purple</option>
+                            <option value="gold">Golden Sunset</option>
+                            <option value="monochrome">Black & White</option>
+                            <option value="earth">Earth Tones</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="background-style">Background Style:</label>
+                        <select id="background-style">
+                            <option value="solid">Solid Color</option>
+                            <option value="gradient">Gradient</option>
+                            <option value="texture">Textured</option>
+                            <option value="geometric">Geometric Pattern</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="book-size">Book Size:</label>
+                        <select id="book-size">
+                            <option value="6x9">6" x 9" (Standard Paperback)</option>
+                            <option value="5.5x8.5">5.5" x 8.5" (Digest)</option>
+                            <option value="8.5x11">8.5" x 11" (Large Format)</option>
+                            <option value="7x10">7" x 10" (Textbook)</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="spine-width">Spine Width (inches):</label>
+                        <input type="number" id="spine-width" min="0.1" max="3.0" step="0.1" value="0.5" placeholder="0.5">
+                        <small class="text-gray-500">Typical range: 0.2" - 2.0" depending on page count</small>
+                    </div>
+                    <div class="control-group">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" id="show-guides" checked class="form-checkbox text-blue-600">
+                            <span class="ml-2 text-gray-700">Show print guides (for design only)</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="export-btn" class="btn btn-primary">Show Preview</button>
+                </div>
+                <div class="button-group">
+                    <button id="export-btn" class="btn btn-primary">Export for Printing</button>
+                </div>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="preview-panel">
+                <h2 class="text-center">Preview</h2>
+                <div class="canvas-container">
+                    <canvas id="book-cover-canvas"></canvas>
+                </div>
+                <div class="preview-info">
+                    <p>The preview shows your complete book cover, including the back cover, spine, and front cover.</p>
+                    <p>The export button will generates or you can view a high-resolution, print-ready PNG file.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

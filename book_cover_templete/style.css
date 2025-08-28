@@ -15,7 +15,34 @@
             flex-direction: column;
             align-items: center;
         }
-        
+        /* Add this to your existing style.css file */
+
+        .landing-page {
+        /* Ensure the landing page content is on top of the waves */
+        z-index: 1;
+        position: relative;
+        height: 100vh;
+        padding: 2rem;
+        color: #3b82f6; /* Use a primary blue color for text */
+    }   
+
+    /* Update h1 and p colors for visibility on the wave background */
+        .landing-page h1 {
+        color: #2c3e50;
+    }
+    .landing-page p {
+        color: #34495e;
+     }
+
+    /* Adjust the primary button for the new landing page style */
+        .landing-page .btn-primary {
+        background-color: #3b82f6;
+        color: white;
+        }
+    .landing-page .btn-primary:hover {
+        background-color: #2563eb;
+        }
+           
         .wave-bg {
             position: fixed;
             top: 0;
