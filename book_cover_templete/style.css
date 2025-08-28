@@ -71,6 +71,14 @@
     .landing-page .btn-primary:hover {
         background-color: #2563eb;
         }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300; /* Bolder font weight for visibility */
+            font-size: 34px;
+            color: #000;
+            letter-spacing: 0.1em;
+        }
            
         
         .container {
