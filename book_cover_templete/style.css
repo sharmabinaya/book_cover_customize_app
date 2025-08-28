@@ -4,7 +4,10 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: #f0f4f8; /* A very light blue-gray background */
+            /* Updated background to a soft, abstract gradient */
+            background: linear-gradient(135deg, #a7b7e0, #e0a7a7, #f7d9a7);
+            background-size: 400% 400%; /* For animating the gradient */
+            animation: gradientAnimation 15s ease infinite; /* Smooth, slow animation */
             color: #333;
             min-height: 100vh;
             padding: 2rem;
@@ -12,6 +15,8 @@
             flex-direction: column;
             align-items: center;
         }
+        
+
         .container {
             max-width: 1600px;
             width: 100%;
@@ -144,4 +149,11 @@
     margin-top: 2rem;
     font-size: 0.875rem;
     padding-top: 1rem;
+}
+
+/* Add this new keyframe animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
