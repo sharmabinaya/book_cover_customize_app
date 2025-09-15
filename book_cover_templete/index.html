@@ -9,28 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <style>
-      /* Custom styles to precisely match the Visme UI */
+      /* Custom styles to set the font for the entire body */
       body {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
       }
-      .btn-primary {
-        background-color: #4c83fa; /* Visme's exact blue */
-        color: white;
-      }
-      .btn-primary:hover {
-        background-color: #3f6fd6;
-      }
-      .btn-secondary {
-        border: 1px solid #d4d8df; /* Visme's exact ghost button border */
-        color: #555;
-      }
-      .btn-secondary:hover {
-        border-color: #4c83fa;
-        color: #4c83fa;
-      }
-
-      /* Custom animation for fading in elements */
+      /* Custom animations here */
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -39,6 +27,16 @@
         to {
           opacity: 1;
           transform: translateY(0);
+        }
+      }
+      @keyframes slideAndFade {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
         }
       }
     </style>
@@ -434,7 +432,7 @@
             class="relative w-full max-w-lg bg-gray-100 rounded-2xl shadow-xl p-8"
           >
             <img
-              src="https://images.unsplash.com/photo-1516321497561-39d15024479e?q=80&w=1740&auto=format&fit=crop"
+              src="app_layout.png"
               alt="App interface screenshots"
               class="w-full h-auto rounded-lg"
             />
@@ -442,5 +440,210 @@
         </div>
       </div>
     </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-800 mb-16">
+          CoverCraft's Book Cover Maker is professional and appealing
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center"
+        >
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i class="bi bi-book text-6xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Customizable Book Covers
+            </h3>
+            <p class="text-gray-600 max-w-sm">
+              Create a cover design tailored for your book with our AI Book
+              Cover Generator in no time. Customize your design as much or as
+              little as you want.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i class="bi bi-mouse-fill text-6xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              User-Friendly Editor
+            </h3>
+            <p class="text-gray-600 max-w-sm">
+              The simple drag-and-drop editor is easy to use. You can swap out
+              text, images, icons, and add data with just a click of a button.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i
+              class="bi bi-file-earmark-arrow-down text-6xl text-blue-500 mb-4"
+            ></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Convert Book Covers
+            </h3>
+            <p class="text-gray-600 max-w-sm">
+              Add your images to book cover templates. Share easily by
+              downloading as PNG or PDF.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i class="bi bi-brush text-6xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Add Excitement</h3>
+            <p class="text-gray-600 max-w-sm">
+              Select from numerous fonts and millions of images to create an
+              enticing book cover for your audience.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i class="bi bi-headset text-6xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Priority Support
+            </h3>
+            <p class="text-gray-600 max-w-sm">
+              Questions? We can help! Our support team is available for you at
+              any time, so that your team can work seamlessly.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-50 rounded-xl p-6 shadow-lg"
+          >
+            <i class="bi bi-camera-fill text-6xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Royalty-Free Stock Photography
+            </h3>
+            <p class="text-gray-600 max-w-sm">
+              Integrations with Pixabay and Pexels elevate your design. Our
+              image library has access to professional photographs in any
+              category.
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="#"
+          class="mt-16 inline-block text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 bg-blue-500 text-white"
+        >
+          CREATE BOOK COVERS
+        </a>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-800 mb-12">
+          Pick a Book Cover Template to Get Started:
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.venngage.com/template/thumbnail/small/9eb09e81-0e27-4c31-b5f3-100531039315.webp"
+              alt="Illustrative Self Love Ebook Cover"
+              class="w-full h-auto object-cover mb-4"
+            />
+            <p class="text-sm font-semibold text-gray-700 p-4">
+              Illustrative Self Love Ebook Cover
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.venngage.com/template/thumbnail/small/6bf68dd8-9f58-4c10-a3d6-768c62e3ff82.webp"
+              alt="Astronaut Ebook Cover"
+              class="w-full h-auto object-cover mb-4"
+            />
+            <p class="text-sm font-semibold text-gray-700 p-4">
+              Astronaut Ebook Cover
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.venngage.com/template/thumbnail/small/c98ed557-93d5-492b-bcd4-81d431df0e6f.webp"
+              alt="Illustration Ebook Cover"
+              class="w-full h-auto object-cover mb-4"
+            />
+            <p class="text-sm font-semibold text-gray-700 p-4">
+              Illustration Ebook Cover
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+          >
+            <img
+              src="https://cdn.venngage.com/template/thumbnail/small/381548b8-4006-4d75-9d4a-909e9eb4cb8e.webp"
+              alt="Adventure Story Ebook Cover"
+              class="w-full h-auto object-cover mb-4"
+            />
+            <p class="text-sm font-semibold text-gray-700 p-4">
+              Adventure Story Ebook Cover
+            </p>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="mt-12 inline-block text-lg font-bold py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105 bg-blue-500 text-white"
+        >
+          Start with a Template
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="mb-8">
+          <div class="text-3xl font-bold tracking-wider mb-2">CoverCraft</div>
+          <p class="text-gray-400">Design your next book cover with ease.</p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-8">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <i class="bi bi-facebook text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <i class="bi bi-twitter text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <i class="bi bi-instagram text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <i class="bi bi-linkedin text-2xl"></i>
+          </a>
+        </div>
+
+        <div class="text-sm text-gray-500">
+          <p>&copy; 2025 CoverCraft. All rights reserved.</p>
+          <div class="mt-2 space-x-4">
+            <a href="#" class="hover:text-white transition-colors duration-300"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-white transition-colors duration-300"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
