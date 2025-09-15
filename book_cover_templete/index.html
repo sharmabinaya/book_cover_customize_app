@@ -5,83 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Your Book Cover</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      /* Custom styles to precisely match the Visme UI */
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .btn-primary {
+        background-color: #4c83fa; /* Visme's exact blue */
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: #3f6fd6;
+      }
+      .btn-secondary {
+        border: 1px solid #d4d8df; /* Visme's exact ghost button border */
+        color: #555;
+      }
+      .btn-secondary:hover {
+        border-color: #4c83fa;
+        color: #4c83fa;
+      }
+    </style>
   </head>
-  <body>
-    <nav class="absolute top-0 left-0 w-full p-6 z-10">
-      <div class="flex items-center justify-between">
-        <div class="text-2xl font-bold text-gray-1000 tracking-wider">
-          CoverCraft
-        </div>
+  <body class="bg-white">
+    <nav class="sticky top-0 left-0 w-full z-20 bg-white shadow-sm">
+      <div
+        class="flex items-center justify-between py-5 px-6 max-w-7xl mx-auto"
+      >
+        <a href="#" class="text-3xl font-bold text-gray-800 tracking-wide"
+          >CoverCraft</a
+        >
 
-        <div class="space-x-4">
+        <div class="flex items-center space-x-6">
           <a
             href="#"
-            class="text-gray-600 hover:text-gray-900 transition-colors duration-300"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Create</a
+          >
+
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Templates</a
+          >
+
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
             >Login</a
           >
           <a
-            href="app.html"
-            class="btn btn-primary-nav text-sm font-bold py-2 px-6 rounded-full shadow-md transition-transform transform hover:scale-105"
-            >Create Now</a
+            href="#"
+            class="text-sm font-semibold py-3 px-6 rounded-md shadow-sm transition-transform bg-blue-500 text-white hover:bg-blue-600"
+            >Sign Up</a
           >
         </div>
       </div>
     </nav>
-    <main class="landing-page flex items-center justify-center p-8 text-white">
-      <div
-        class="landing-content-wrapper grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto"
-      >
-        <div class="text-left py-8 lg:py-0">
-          <h1 class="mb-4 leading-tight text-black drop-shadow-lg">
-            Entice readers with an eye-catching book cover
-          </h1>
-          <p class="max-w-xl text-xl mb-8 opacity-90 text-gray-700">
-            Customise your book-cover-canvas and make your book's first
-            impression count.
-          </p>
 
+    <main class="flex items-center justify-center p-8 text-black min-h-screen">
+      <div class="text-center max-w-4xl mx-auto px-4 py-24">
+        <h1
+          class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-gray-800"
+        >
+          Design, Manage, and Publish <br />All Your Business Content
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          The interactive design platform powered by AI to easily create high
+          converting, engaging, and professional branded content - faster.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
           <a
             href="app.html"
-            class="btn btn-primary text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 inline-block mb-8"
+            class="flex items-center justify-center text-white text-sm font-bold py-2 px-6 rounded-md shadow-sm transition-transform transform hover:scale-105 bg-blue-500"
           >
-            Create a free book cover
+            Create your Own
           </a>
-
-          <div class="flex items-center space-x-4">
-            <div class="flex items-center">
-              <i class="fa-solid fa-star text-yellow-400 text-lg"></i>
-              <i class="fa-solid fa-star text-yellow-400 text-lg"></i>
-              <i class="fa-solid fa-star text-yellow-400 text-lg"></i>
-              <i class="fa-solid fa-star text-yellow-400 text-lg"></i>
-              <i class="fa-solid fa-star-half-alt text-yellow-400 text-lg"></i>
-            </div>
-            <p class="text-lg opacity-70 text-gray-600">4.9/5 (414)</p>
-          </div>
+          <a
+            href="#"
+            class="btn btn-secondary text-lg font-semibold py-4 px-8 rounded-md transition-all duration-300"
+          >
+            View Templates
+          </a>
         </div>
 
         <div
-          class="landing-image-container relative flex justify-center lg:justify-end p-4"
+          class="flex items-center justify-center space-x-8 text-gray-500 font-semibold text-lg"
         >
-          <img
-            src="bg_cover1.svg"
-            alt="Book Cover Example 1"
-            class="w-auto h-96 object-contain rotate-0 -mr-8 shadow-2xl rounded-lg"
-          />
+          <div class="flex items-center space-x-1">
+            <span class="text-gray-700">Capterra</span>
+            <div class="flex items-center">
+              <span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-1">
+            <span class="text-gray-700">G2 CROWD</span>
+            <div class="flex items-center">
+              <span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span
+              ><span class="text-yellow-400">★</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <section class="text-center py-16 px-4">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">
+        What will you create with CoverCraft?
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        The power of visual communication is in your hands. Start your first
+        project in minutes, even with no prior design experience.
+      </p>
+    </section>
   </body>
 </html>
