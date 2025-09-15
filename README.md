@@ -2,12 +2,6 @@
 
 ****CoverCraft**** is a simple yet powerful web-based tool that allows authors and designers to create stunning, complete book covers with ease. It provides a real-time preview and exports high-resolution, print-ready files suitable for professional printing.  
 
-<img width="1316" height="679" alt="web landing page " src="https://github.com/user-attachments/assets/de9e0ac1-114e-40b8-8015-5ab5c572fac7" />
-
-
-<img width="1307" height="674" alt="Main Web app" src="https://github.com/user-attachments/assets/e0dd4ff7-c43f-412d-a1ce-9fea8818d90a" />
-
-
 ### ✨ Features
 
 * **Real-time Preview** **:** See your full cover (front, spine, and back) update instantly as you type and change settings.
