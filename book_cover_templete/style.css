@@ -4,12 +4,11 @@
 body {
   font-family: "Inter", sans-serif;
   /* Use a fixed, animated gradient background */
-  background-image: url(book_app.jpg);
+  background: linear-gradient(135deg, #a7b7e0, #e0a7a7, #f7d9a7);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #333;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
