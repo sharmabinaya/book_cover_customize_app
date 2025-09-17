@@ -4,7 +4,7 @@
 body {
   font-family: "Inter", sans-serif;
   /* Use a fixed, animated gradient background */
-  background: linear-gradient(135deg, #a7b7e0, #e0a7a7, #f7d9a7);
+
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #333;
