@@ -14,7 +14,46 @@ body {
   flex-direction: column;
   align-items: center;
 }
+/* Updated Nav Bar Styles for a Professional Look */
+/* Update the main nav container */
+.top-nav {
+  display: flex; /* Makes it a flex container */
+  justify-content: space-between; /* Pushes the child elements to opposite ends */
+  align-items: center; /* Vertically centers the items */
+  width: 100%;
+  padding: 1.25rem 3rem;
+}
 
+/* Style the left and right groups of links */
+.nav-left,
+.nav-right {
+  display: flex; /* Makes them flex containers */
+  align-items: center; /* Vertically centers the links */
+  gap: 2rem; /* Adds space between the links */
+}
+
+/* Style the logo */
+.logo {
+  font-weight: 300;
+  font-size: 34px;
+  color: #000;
+  letter-spacing: 0.1em;
+  padding-right: 1rem; /* Adds some space between the logo and the links */
+}
+
+/* Style the links */
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #5a75b2;
+}
 .headline-font {
   font-family: "Playfair Display", serif;
   font-style: italic;
