@@ -88,7 +88,7 @@ body {
 }
 @media (min-width: 1024px) {
   .app-grid {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1.5fr 2fr;
     height: calc(100vh - 4rem);
   }
 }
@@ -157,17 +157,22 @@ body {
 }
 .button-group {
   display: flex;
+  flex-direction: row; /* Ensures a horizontal layout */
+  flex-wrap: nowrap; /* Prevents wrapping to the next line */
   gap: 1rem;
-  justify-content: flex-end;
   margin-top: 2rem;
 }
+
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.5rem; /* You can adjust these values if needed */
   border-radius: 0.75rem;
-  font-weight: 600;
+  font-weight: 300;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
-  flex-shrink: 0;
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  text-align: center; /* Ensures text is centered horizontally within the button */
+  display: inline-flex; /* Use inline-flex to center text vertically if needed, and allow it to shrink */
+  align-items: center; /* Centers content vertically within the button */
 }
 .btn-primary {
   background-color: #3b82f6;
