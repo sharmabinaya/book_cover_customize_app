@@ -209,7 +209,7 @@ canvas {
 /* Updated footer styles for better visibility and spacing */
 .preview-info {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
   font-size: 0.875rem;
   padding-top: 1rem;
 }
