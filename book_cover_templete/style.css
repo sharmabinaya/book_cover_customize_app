@@ -12,8 +12,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-/* Updated Nav Bar Styles for a Professional Look */
-/* Update the main nav container */
 .top-nav {
   display: flex; /* Makes it a flex container */
   justify-content: space-between; /* Pushes the child elements to opposite ends */
