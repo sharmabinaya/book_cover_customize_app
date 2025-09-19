@@ -205,11 +205,9 @@ canvas {
   border-radius: 0.75rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-
-/* Updated footer styles for better visibility and spacing */
 .preview-info {
   text-align: center;
-  margin-top: 0rem;
+  margin-top: -2rem;
   font-size: 0.875rem;
   padding-top: 1rem;
 }
