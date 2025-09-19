@@ -3,8 +3,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-  /* Use a fixed, animated gradient background */
-  background: linear-gradient(135deg, #a7b7e0, #e0a7a7, #f7d9a7);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #333;
@@ -22,8 +20,21 @@ body {
   align-items: center; /* Vertically centers the items */
   width: 100%;
   padding: 1.25rem 3rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* First, we'll create a class for the glowing button links */
+.nav-button-glow {
+  padding: 0.75rem 1.5rem; /* Add padding to create a button shape */
+  border-radius: 0.75rem;
+  background-color: #ffffff; /* A color that matches your buttons */
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
+/* Apply the glow effect on hover */
+.nav-button-glow:hover {
+  box-shadow: 0 0 15px rgba(208, 243, 243, 0.7);
+}
 /* Style the left and right groups of links */
 .nav-left,
 .nav-right {
