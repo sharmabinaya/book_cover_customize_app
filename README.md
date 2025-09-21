@@ -39,9 +39,12 @@
 
 ```
 my book cover/
-├── index.html          # The main application file
+├── index.html
+├── app.html         # The main application file
 ├── script.js           # All JavaScript logic and canvas drawing
 ├── styles.css          # The core CSS styling
+├── login.html
+├── script.js
 └── README.md           # This project file
 
 ```
