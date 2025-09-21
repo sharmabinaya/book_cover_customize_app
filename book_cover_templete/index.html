@@ -14,16 +14,32 @@
       rel="stylesheet"
     />
     <style>
+      :root {
+        /* Colors */
+        --primary-text: #333;
+        --secondary-text: #666;
+        --light-text: #aaa;
+        --border-color: #e0e0e0;
+        --input-bg: #f9f9f9;
+        --button-primary-bg: #fdd835; /* Yellow */
+        --button-primary-hover: #fbc02d;
+        --button-social-bg: #ffffff;
+        --button-social-hover: #f0f0f0;
+        --bg-color: #f0f2f5; /* Overall background */
+        --btn-primary-blue: #4c83fa;
+        --btn-primary-blue-hover: #3f6fd6;
+        --btn-secondary-border: #d4d8df;
+      }
+      body {
+        /* Set a consistent background color */
+        background-color: var(--bg-color);
+        font-family: "Roboto Condensed", sans-serif;
+      }
       main {
         background-size: cover;
         background-position: center;
-        background-image: url("hero_1.jpg");
         background-repeat: no-repeat;
         min-height: 100vh;
-      }
-      /* Custom styles to set the font for the entire body */
-      body {
-        font-family: "Roboto Condensed", sans-serif;
       }
       .btn-primary {
         background-color: #4c83fa; /* Visme's exact blue */
