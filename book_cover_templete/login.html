@@ -4,61 +4,251 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create your Account</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <div class="form-container">
-      <form id="login-form" class="auth-form">
-        <h3>Login to Covercraft</h3>
-        <div class="input-group">
-          <label for="login-email">Email:</label>
+  </head>
+  <body
+    style="
+      font-family: 'Roboto Condensed', sans-serif;
+      background-image: url(hero_1.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      color: #fff; /* Changed text color for better contrast on a dark background */
+      padding: 2rem;
+    "
+  >
+    <div
+      style="
+        max-width: 400px;
+        width: 100%;
+        margin: auto; /* Centering with auto margins */
+        padding: 2rem;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.15
+        ); /* Semi-transparent white */
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+        text-align: center;
+      "
+    >
+      <form id="login-form" style="display: block">
+        <h3
+          style="
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1.5rem;
+          "
+        >
+          Login to Covercraft
+        </h3>
+        <div style="text-align: left; margin-bottom: 1rem">
+          <label
+            for="login-email"
+            style="
+              display: block;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              color: #000000;
+            "
+            >Email:</label
+          >
           <input
             type="email"
             id="login-email"
             placeholder="you@example.com"
             required
+            style="
+              width: 100%;
+              padding: 0.75rem;
+              border-radius: 0.75rem;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.2);
+              color: #000000;
+              transition: border-color 0.2s, box-shadow 0.2s;
+            "
           />
         </div>
-        <div class="input-group">
-          <label for="login-password">Password:</label>
-          <input type="password" id="login-password" required />
+        <div style="text-align: left; margin-bottom: 1rem">
+          <label
+            for="login-password"
+            style="
+              display: block;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              color: #000000;
+            "
+            >Password:</label
+          >
+          <input
+            type="password"
+            id="login-password"
+            required
+            style="
+              width: 100%;
+              padding: 0.75rem;
+              border-radius: 0.75rem;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.2);
+              color: #000000;
+              transition: border-color 0.2s, box-shadow 0.2s;
+            "
+          />
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-        <div class="switch-form">
-          Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 0.75rem;
+            font-weight: 300;
+            cursor: pointer;
+          "
+        >
+          Login
+        </button>
+        <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #eee">
+          Don't have an account?
+          <a
+            href="#"
+            id="show-signup"
+            style="color: #6a95ed; text-decoration: none; font-weight: 600"
+            >Sign Up</a
+          >
         </div>
       </form>
 
-      <form id="signup-form" class="auth-form hidden">
-        <h3>Join Covercraft</h3>
-        <div class="input-group">
-          <label for="signup-email">Email:</label>
+      <form id="signup-form" style="display: none">
+        <h3
+          style="
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.5rem;
+          "
+        >
+          Join Covercraft
+        </h3>
+        <div style="text-align: left; margin-bottom: 1rem">
+          <label
+            for="signup-email"
+            style="
+              display: block;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              color: #eee;
+            "
+            >Email:</label
+          >
           <input
             type="email"
             id="signup-email"
             placeholder="you@example.com"
             required
+            style="
+              width: 100%;
+              padding: 0.75rem;
+              border-radius: 0.75rem;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.2);
+              color: #fff;
+              transition: border-color 0.2s, box-shadow 0.2s;
+            "
           />
         </div>
-        <div class="input-group">
-          <label for="signup-password">Password:</label>
-          <input type="password" id="signup-password" required />
+        <div style="text-align: left; margin-bottom: 1rem">
+          <label
+            for="signup-password"
+            style="
+              display: block;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              color: #eee;
+            "
+            >Password:</label
+          >
+          <input
+            type="password"
+            id="signup-password"
+            required
+            style="
+              width: 100%;
+              padding: 0.75rem;
+              border-radius: 0.75rem;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.2);
+              color: #fff;
+              transition: border-color 0.2s, box-shadow 0.2s;
+            "
+          />
         </div>
-        <div class="input-group">
-          <label for="confirm-password">Confirm Password:</label>
-          <input type="password" id="confirm-password" required />
+        <div style="text-align: left; margin-bottom: 1rem">
+          <label
+            for="confirm-password"
+            style="
+              display: block;
+              font-weight: 500;
+              margin-bottom: 0.5rem;
+              color: #eee;
+            "
+            >Confirm Password:</label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            required
+            style="
+              width: 100%;
+              padding: 0.75rem;
+              border-radius: 0.75rem;
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              background-color: rgba(255, 255, 255, 0.2);
+              color: #fff;
+              transition: border-color 0.2s, box-shadow 0.2s;
+            "
+          />
         </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-        <div class="switch-form">
-          Already have an account? <a href="#" id="show-login">Log In</a>
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 0.75rem;
+            font-weight: 300;
+            cursor: pointer;
+          "
+        >
+          Sign Up
+        </button>
+        <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #eee">
+          Already have an account?
+          <a
+            href="#"
+            id="show-login"
+            style="color: #6a95ed; text-decoration: none; font-weight: 600"
+            >Log In</a
+          >
         </div>
       </form>
     </div>
-  </head>
+  </body>
 </html>
