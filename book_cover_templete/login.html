@@ -4,251 +4,405 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create your Account</title>
-  </head>
-  <body
-    style="
-      font-family: 'Roboto Condensed', sans-serif;
-      background-image: url(hero_1.jpg);
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      color: #fff; /* Changed text color for better contrast on a dark background */
-      padding: 2rem;
-    "
-  >
-    <div
-      style="
-        max-width: 400px;
-        width: 100%;
-        margin: auto; /* Centering with auto margins */
-        padding: 2rem;
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0.15
-        ); /* Semi-transparent white */
-        border-radius: 1.5rem;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        backdrop-filter: blur(10px); /* Glassmorphism blur effect */
-        -webkit-backdrop-filter: blur(10px); /* For Safari support */
-        border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
-        text-align: center;
-      "
-    >
-      <form id="login-form" style="display: block">
-        <h3
-          style="
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 1.5rem;
-          "
-        >
-          Login to Covercraft
-        </h3>
-        <div style="text-align: left; margin-bottom: 1rem">
-          <label
-            for="login-email"
-            style="
-              display: block;
-              font-weight: 500;
-              margin-bottom: 0.5rem;
-              color: #000000;
-            "
-            >Email:</label
-          >
-          <input
-            type="email"
-            id="login-email"
-            placeholder="you@example.com"
-            required
-            style="
-              width: 100%;
-              padding: 0.75rem;
-              border-radius: 0.75rem;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              background-color: rgba(255, 255, 255, 0.2);
-              color: #000000;
-              transition: border-color 0.2s, box-shadow 0.2s;
-            "
-          />
-        </div>
-        <div style="text-align: left; margin-bottom: 1rem">
-          <label
-            for="login-password"
-            style="
-              display: block;
-              font-weight: 500;
-              margin-bottom: 0.5rem;
-              color: #000000;
-            "
-            >Password:</label
-          >
-          <input
-            type="password"
-            id="login-password"
-            required
-            style="
-              width: 100%;
-              padding: 0.75rem;
-              border-radius: 0.75rem;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              background-color: rgba(255, 255, 255, 0.2);
-              color: #000000;
-              transition: border-color 0.2s, box-shadow 0.2s;
-            "
-          />
-        </div>
-        <button
-          type="submit"
-          style="
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
-            margin-top: 1rem;
-            background-color: #3b82f6;
-            color: white;
-            border: none;
-            border-radius: 0.75rem;
-            font-weight: 300;
-            cursor: pointer;
-          "
-        >
-          Login
-        </button>
-        <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #000000">
-          Don't have an account?
-          <a
-            href="#"
-            id="show-signup"
-            style="color: #6a95ed; text-decoration: none; font-weight: 600"
-            >Sign Up</a
-          >
-        </div>
-      </form>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Colors */
+        --primary-text: #333;
+        --secondary-text: #666;
+        --light-text: #aaa;
+        --border-color: #e0e0e0;
+        --input-bg: #f9f9f9;
+        --button-primary-bg: #fdd835; /* Yellow */
+        --button-primary-hover: #fbc02d;
+        --button-social-bg: #ffffff;
+        --button-social-hover: #f0f0f0;
+        --bg-color: #f0f2f5; /* Overall background */
+      }
 
-      <form id="signup-form" style="display: none">
-        <h3
-          style="
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 1.5rem;
-          "
-        >
-          Join Covercraft
-        </h3>
-        <div style="text-align: left; margin-bottom: 1rem">
-          <label
-            for="signup-email"
-            style="
-              display: block;
-              font-weight: 500;
-              margin-bottom: 0.5rem;
-              color: #eee;
-            "
-            >Email:</label
-          >
-          <input
-            type="email"
-            id="signup-email"
-            placeholder="you@example.com"
-            required
-            style="
-              width: 100%;
-              padding: 0.75rem;
-              border-radius: 0.75rem;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              background-color: rgba(255, 255, 255, 0.2);
-              color: #fff;
-              transition: border-color 0.2s, box-shadow 0.2s;
-            "
-          />
+      body {
+        font-family: "Inter", sans-serif; /* Using Inter for a modern look */
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in element's total width and height */
+      }
+
+      .main-container {
+        display: flex;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Ensures content respects border-radius */
+        max-width: 1200px; /* Adjust as needed */
+        width: 100%;
+        min-height: 600px; /* Minimum height for the container */
+      }
+
+      /* Left Panel - Form Section */
+      .form-panel {
+        flex: 1; /* Takes up one portion of the available space */
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Pushes Crextio to top, have an account to bottom */
+        background: linear-gradient(
+          145deg,
+          #ffffff 0%,
+          #f0f8ff 50%,
+          #ffeebb 100%
+        ); /* Light gradient */
+        min-width: 400px; /* Minimum width for the form panel */
+      }
+
+      .logo-text {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: var(--primary-text);
+        margin-bottom: 30px; /* Space from heading */
+      }
+
+      .form-header {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+
+      .form-header h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-text);
+        margin-bottom: 10px;
+      }
+
+      .form-header p {
+        font-size: 1rem;
+        color: var(--secondary-text);
+        line-height: 1.5;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .input-group label {
+        display: block;
+        font-size: 0.9rem;
+        color: var(--secondary-text);
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        font-size: 1rem;
+        color: var(--primary-text);
+        background-color: var(--input-bg);
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+
+      .input-group input:focus {
+        outline: none;
+        border-color: #a0c2ff;
+        box-shadow: 0 0 0 3px rgba(160, 194, 255, 0.2);
+        background-color: #fff;
+      }
+
+      .input-group .password-input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .input-group .password-input-wrapper input {
+        flex-grow: 1;
+        padding-right: 40px; /* Make space for the icon */
+      }
+
+      .input-group .password-toggle-icon {
+        position: absolute;
+        right: 15px;
+        color: var(--secondary-text);
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+
+      .submit-button {
+        width: 100%;
+        padding: 15px 20px;
+        background-color: var(--button-primary-bg);
+        color: var(--primary-text); /* Black text on yellow button */
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.2s, transform 0.2s;
+      }
+
+      .submit-button:hover {
+        background-color: var(--button-primary-hover);
+        transform: translateY(-1px);
+      }
+
+      .or-divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 30px 0;
+        color: var(--light-text);
+      }
+
+      .or-divider::before,
+      .or-divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .or-divider:not(:empty)::before {
+        margin-right: 15px;
+      }
+
+      .or-divider:not(:empty)::after {
+        margin-left: 15px;
+      }
+
+      .social-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .social-button {
+        flex: 1;
+        padding: 12px 20px;
+        background-color: var(--button-social-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1rem;
+        color: var(--primary-text);
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+      }
+
+      .social-button:hover {
+        background-color: var(--button-social-hover);
+        border-color: #c0c0c0;
+      }
+
+      .social-button i {
+        font-size: 1.2rem;
+      }
+
+      .form-footer {
+        margin-top: 50px; /* Space from social buttons */
+        font-size: 0.9rem;
+        color: var(--light-text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .form-footer a {
+        color: var(--secondary-text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .form-footer a:hover {
+        color: var(--primary-text);
+      }
+
+      /* Right Panel - Image/Content Section */
+      .image-panel {
+        flex: 1.5; /* Takes up more space than the form */
+        background-image: url("login_bg.avif"); /* Replace with your desired image */
+        background-size: cover;
+        background-position: center;
+        border-radius: 0 20px 20px 0; /* Only right corners rounded */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 900px) {
+        .main-container {
+          flex-direction: column; /* Stack panels vertically on smaller screens */
+          min-height: auto;
+          max-width: 600px;
+        }
+
+        .image-panel {
+          min-height: 300px; /* Give some height to the image panel */
+          border-radius: 0 0 20px 20px; /* Round bottom corners */
+          flex: 1; /* Adjust flex behavior */
+        }
+
+        .form-panel {
+          border-radius: 20px 20px 0 0; /* Round top corners */
+          min-width: unset; /* Remove min-width restriction */
+        }
+
+        .form-footer {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .form-panel {
+          padding: 25px;
+        }
+        .form-header h2 {
+          font-size: 1.7rem;
+        }
+        .social-buttons {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-panel">
+        <div>
+          <div class="logo-text">Covercraft</div>
+
+          <div class="form-header">
+            <h2>Create an account</h2>
+            <p>Sing up and get 30 day free trial</p>
+          </div>
+
+          <form id="signup-form">
+            <div class="input-group">
+              <label for="full-name">Full name</label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Amelie Laurent"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="signup-email">Email</label>
+              <input
+                type="email"
+                id="signup-email"
+                placeholder="amelielaurant7622@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="signup-password">Password</label>
+              <div class="password-input-wrapper">
+                <input
+                  type="password"
+                  id="signup-password"
+                  placeholder="***********"
+                  required
+                />
+                <i class="bi bi-eye-slash password-toggle-icon"></i>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+
+            <div class="or-divider">Or</div>
+
+            <div class="social-buttons">
+              <button type="button" class="social-button">
+                <i class="bi bi-apple"></i> Apple
+              </button>
+              <button type="button" class="social-button">
+                <i class="bi bi-google"></i> Google
+              </button>
+            </div>
+          </form>
         </div>
-        <div style="text-align: left; margin-bottom: 1rem">
-          <label
-            for="signup-password"
-            style="
-              display: block;
-              font-weight: 500;
-              margin-bottom: 0.5rem;
-              color: #eee;
-            "
-            >Password:</label
-          >
-          <input
-            type="password"
-            id="signup-password"
-            required
-            style="
-              width: 100%;
-              padding: 0.75rem;
-              border-radius: 0.75rem;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              background-color: rgba(255, 255, 255, 0.2);
-              color: #fff;
-              transition: border-color 0.2s, box-shadow 0.2s;
-            "
-          />
+
+        <div class="form-footer">
+          <div>Have any account? <a href="#" id="show-login">Sign in</a></div>
+          <a href="#">Terms & Conditions</a>
         </div>
-        <div style="text-align: left; margin-bottom: 1rem">
-          <label
-            for="confirm-password"
-            style="
-              display: block;
-              font-weight: 500;
-              margin-bottom: 0.5rem;
-              color: #eee;
-            "
-            >Confirm Password:</label
-          >
-          <input
-            type="password"
-            id="confirm-password"
-            required
-            style="
-              width: 100%;
-              padding: 0.75rem;
-              border-radius: 0.75rem;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              background-color: rgba(255, 255, 255, 0.2);
-              color: #fff;
-              transition: border-color 0.2s, box-shadow 0.2s;
-            "
-          />
-        </div>
-        <button
-          type="submit"
-          style="
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
-            margin-top: 1rem;
-            background-color: #3b82f6;
-            color: white;
-            border: none;
-            border-radius: 0.75rem;
-            font-weight: 300;
-            cursor: pointer;
-          "
-        >
-          Sign Up
-        </button>
-        <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #eee">
-          Already have an account?
-          <a
-            href="#"
-            id="show-login"
-            style="color: #6a95ed; text-decoration: none; font-weight: 600"
-            >Log In</a
-          >
-        </div>
-      </form>
+      </div>
+
+      <div class="image-panel"></div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const passwordToggle = document.querySelector(".password-toggle-icon");
+        const passwordInput = document.getElementById("signup-password");
+
+        if (passwordToggle && passwordInput) {
+          passwordToggle.addEventListener("click", function () {
+            const type =
+              passwordInput.getAttribute("type") === "password"
+                ? "text"
+                : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("bi-eye"); // Change icon to open eye
+            this.classList.toggle("bi-eye-slash"); // Change icon to closed eye
+          });
+        }
+
+        // --- Form Switching (as per your original code) ---
+        const loginForm = document.getElementById("login-form");
+        const signupForm = document.getElementById("signup-form");
+        const showSignupLink = document.getElementById("show-signup");
+        const showLoginLink = document.getElementById("show-login");
+
+        // Initially hide login form if it's not the primary one you're showing
+        // In this redesign, we are focusing on the signup form first.
+        // If you want to show login initially, you'd adjust this.
+        if (loginForm) loginForm.classList.add("hidden"); // Ensure login is hidden if signup is shown
+
+        if (showSignupLink) {
+          showSignupLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (loginForm) loginForm.classList.add("hidden");
+            if (signupForm) signupForm.classList.remove("hidden");
+          });
+        }
+
+        if (showLoginLink) {
+          showLoginLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (signupForm) signupForm.classList.add("hidden");
+            if (loginForm) loginForm.classList.remove("hidden");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
