@@ -407,20 +407,3 @@ canvas {
 
   padding-top: 1rem;
 }
-
-.glassy-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-radius: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.glassy-card:hover {
-  border: 2px solid rgba(255, 255, 255, 1);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 8px 25px rgba(0, 0, 0, 0.3);
-}
