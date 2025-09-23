@@ -1,71 +1,99 @@
+/* Custom styles to enhance the Tailwind design */
+
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 body {
-  font-family: "Oswald", sans-serif;
-  background: linear-gradient(to bottom, #fcfbf2, #ffecb3, #fcfbf2);
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
-  min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  font-family: oswald, sans-serif;
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-size: 400% 400%;
+
+  background: linear-gradient(to bottom, #fcfbf2, #ffecb3, #fcfbf2);
+
+  animation: gradientAnimation 15s ease infinite;
+
+  min-height: 100vh;
+
+  padding: 2rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
 }
 
 .top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Makes it a flex container */
+
+  justify-content: space-between; /* Pushes the child elements to opposite ends */
+
+  align-items: center; /* Vertically centers the items */
+
   width: 100%;
+
   padding: 1.25rem 3rem;
+
   transition: box-shadow 0.3s ease-in-out;
 }
 
+/* First, we'll create a class for the glowing button links */
+
 .nav-button-glow {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.5rem; /* Add padding to create a button shape */
+
   border-radius: 0.75rem;
-  background-color: #ffffff;
+
+  background-color: #ffffff; /* A color that matches your buttons */
+
+  color: white;
+
   transition: box-shadow 0.3s ease-in-out;
 }
+
+/* Apply the glow effect on hover */
 
 .nav-button-glow:hover {
   box-shadow: 0 0 15px rgba(217, 187, 16, 0.7);
 }
 
+/* Style the left and right groups of links */
+
 .nav-left,
 .nav-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  display: flex; /* Makes them flex containers */
+
+  align-items: center; /* Vertically centers the links */
+
+  gap: 2rem; /* Adds space between the links */
 }
 
+/* Style the logo */
+
 .logo {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+
   font-size: 34px;
+
   color: #000;
+
   letter-spacing: 0.1em;
-  padding-right: 1rem;
+
+  padding-right: 1rem; /* Adds some space between the logo and the links */
 }
+
+/* Style the links */
 
 .nav-link {
   font-family: "Inter", sans-serif;
+
   font-weight: 500;
+
   font-size: 0.95rem;
+
   color: #000000;
+
   text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
@@ -75,34 +103,48 @@ body {
 
 .headline-font {
   font-family: "Playfair Display", serif;
+
   font-style: italic;
 }
 
 .btn-primary-nav {
   background-color: #3b82f6;
+
   color: white;
+
   border: none;
 }
 
 .btn-primary-nav:hover {
   background-color: #2563eb;
+
   transform: translateY(-1px);
 }
 
 .landing-page {
   z-index: 1;
+
   position: relative;
-  min-height: 100vh;
+
+  min-height: 100vh; /* Use min-height to allow content to grow */
+
   padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+
+  display: flex; /* Ensure it's a flex container for centering */
+
+  align-items: center; /* Center vertically */
+
+  justify-content: center; /* Center horizontally */
+
+  width: 100%; /* Ensure it takes full width */
 }
+
+/* Update h1 and p colors for visibility on the wave background */
 
 .landing-page h1 {
   font-family: "Germania One", cursive;
-  font-size: 74px;
+
+  font-size: 74px; /* The size remains the same */
 }
 
 .landing-page p {
@@ -111,13 +153,18 @@ body {
 
 .controls-panel,
 .preview-panel {
-  background-color: white;
-  z-index: 10;
-  position: relative;
+  background-color: white; /* Ensure they have a solid background */
+
+  z-index: 10; /* Keep them above the wave background */
+
+  position: relative; /* Needed for z-index to work */
 }
+
+/* Adjust the primary button for the new landing page style */
 
 .landing-page .btn-primary {
   background-color: #3b82f6;
+
   color: white;
 }
 
@@ -125,52 +172,90 @@ body {
   background-color: #2563eb;
 }
 
+.logo {
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 300; /* Bolder font weight for visibility */
+
+  font-size: 34px;
+
+  color: #000;
+
+  letter-spacing: 0.1em;
+}
+
 .container {
   max-width: 1600px;
+
   width: 100%;
+
   display: flex;
+
   flex-direction: column;
+
   gap: 2rem;
+
   flex-grow: 1;
 }
 
 .app-grid {
   display: grid;
+
   grid-template-columns: 1fr;
+
   gap: 2rem;
 }
 
 @media (min-width: 1024px) {
   .app-grid {
     grid-template-columns: 1.5fr 2fr;
+
     height: calc(100vh - 4rem);
   }
 }
 
 .controls-panel {
+  background-color: white;
+
   padding: 2rem;
+
   border-radius: 1.5rem;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  overflow-y: auto;
+
+  overflow-y: auto; /* Makes the panel scrollable */
 }
 
 .preview-panel {
+  background-color: white;
+
   padding: 2rem;
+
   border-radius: 1.5rem;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
+
   flex-grow: 1;
+
   min-width: 800px;
 }
 
 .controls-panel h2,
 .preview-panel h2 {
   font-size: 1.75rem;
+
   font-weight: 700;
+
   color: #222;
+
   margin-bottom: 2.5rem;
 }
 
@@ -180,10 +265,15 @@ body {
 
 .control-section h3 {
   font-size: 1.25rem;
+
   font-weight: 600;
+
   color: #555;
+
   border-bottom: 2px solid #e2e8f0;
+
   padding-bottom: 0.5rem;
+
   margin-bottom: 1rem;
 }
 
@@ -193,8 +283,11 @@ body {
 
 .control-group label {
   display: block;
+
   font-weight: 500;
+
   margin-bottom: 0.5rem;
+
   color: #444;
 }
 
@@ -203,9 +296,13 @@ body {
 .control-group select,
 .control-group textarea {
   width: 100%;
+
   padding: 0.75rem;
+
   border-radius: 0.75rem;
+
   border: 1px solid #ccc;
+
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -213,44 +310,63 @@ body {
 .control-group select:focus,
 .control-group textarea:focus {
   outline: none;
+
   border-color: #3b82f6;
+
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
 }
 
 .button-group {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+
+  flex-direction: row; /* Ensures a horizontal layout */
+
+  flex-wrap: nowrap; /* Prevents wrapping to the next line */
+
   gap: 1rem;
+
   margin-top: 2rem;
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.5rem; /* You can adjust these values if needed */
+
   border-radius: 0.75rem;
+
   font-weight: 300;
+
   cursor: pointer;
+
   transition: background-color 0.2s, transform 0.2s;
-  white-space: nowrap;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
+
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+
+  text-align: center; /* Ensures text is centered horizontally within the button */
+
+  display: inline-flex; /* Use inline-flex to center text vertically if needed, and allow it to shrink */
+
+  align-items: center; /* Centers content vertically within the button */
 }
 
 .btn-primary {
   background-color: #3b82f6;
+
   color: white;
+
   border: none;
 }
 
 .btn-primary:hover {
   background-color: #2563eb;
+
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background-color: transparent;
+
   color: #3b82f6;
+
   border: 2px solid #3b82f6;
 }
 
@@ -259,52 +375,78 @@ body {
 }
 
 .canvas-container {
-  flex-grow: 1;
+  flex-grow: 1; /* Allows the container to fill the space */
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   padding: 2rem;
 }
 
 canvas {
   max-width: 100%;
+
   max-height: 100%;
+
   height: auto;
+
   border-radius: 0.75rem;
+
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .preview-info {
   text-align: center;
+
   margin-top: -2rem;
+
   font-size: 0.875rem;
+
   padding-top: 1rem;
 }
 
 .glassy-card {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border: 2px solid rgba(255, 0, 0, 0.7);
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
   overflow: hidden;
 }
 
 /* Add a subtle gradient shine overlay */
+
 .glassy-card::before {
   content: "";
+
   position: absolute;
+
   top: -50%;
+
   left: -50%;
+
   width: 200%;
+
   height: 200%;
+
   background: radial-gradient(
     circle at top left,
+
     rgba(255, 255, 255, 0.6),
     transparent 60%
   );
+
   transform: rotate(25deg);
+
   pointer-events: none;
 }
