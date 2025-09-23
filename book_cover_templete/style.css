@@ -4,7 +4,7 @@
 body {
   font-family: oswald, sans-serif;
   background-size: 400% 400%;
-  background: linear-gradient(to bottom, #fcfbf2, #ffecb3);
+  background: linear-gradient(to bottom, #fcfbf2, #ffecb3, #fcfbf2);
   animation: gradientAnimation 15s ease infinite;
   min-height: 100vh;
   padding: 2rem;
