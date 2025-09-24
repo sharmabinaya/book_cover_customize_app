@@ -282,29 +282,3 @@ canvas {
   font-size: 0.875rem;
   padding-top: 1rem;
 }
-
-..glassy-card {
-  position: relative;
-  background: linear-gradient(to bottom, #fffacd, #b0e0e6);
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-}
-
-/* Add a subtle gradient shine overlay */
-.glassy-card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle at top left,
-    rgba(255, 255, 255, 0.6),
-    transparent 60%
-  );
-  transform: rotate(25deg);
-  pointer-events: none;
-}
