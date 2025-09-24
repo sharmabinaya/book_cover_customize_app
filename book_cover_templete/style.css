@@ -54,8 +54,8 @@ body {
 }
 
 .logo {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 34px;
   color: #000;
   letter-spacing: 0.1em;
@@ -103,7 +103,7 @@ body {
 }
 
 .landing-page h1 {
-  font-family: "Germania One", cursive;
+  font-family: "Oswald", sans-serif;
   font-size: 74px;
 }
 
