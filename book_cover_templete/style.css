@@ -63,7 +63,7 @@ body {
 }
 
 .nav-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   color: #000000;
@@ -76,7 +76,7 @@ body {
 }
 
 .headline-font {
-  font-family: "Playfair Display", serif;
+  font-family: "Oswald", sans-serif;
   font-style: italic;
 }
 
