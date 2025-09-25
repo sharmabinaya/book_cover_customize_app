@@ -1,5 +1,10 @@
 # 📚Book Cover - Professional Book Cover Generator
 
+
+<img width="1367" height="671" alt="Screenshot 2025-09-25 at 12 34 57" src="https://github.com/user-attachments/assets/5e897db6-c336-4b10-a7b4-f07aa69249dc" />
+
+Main Screen for the Web App
+
 ****CoverCraft**** is a simple yet powerful web-based tool that allows authors and designers to create stunning, complete book covers with ease. It provides a real-time preview and exports high-resolution, print-ready files suitable for professional printing.  
 
 ### ✨ Features
@@ -15,7 +20,10 @@
 * **Margin and Bleed of Page Design** **:** The interface is help user to keep the design and text within the mergin and bleed that shows the in  preview. this will help to see the user if the text or image is being cut off while priting.
 * **Image Integration layout (AI Suggestion) (prebuild) Design** **:** ..... Working in process
 
-  
+  ## Main Web App
+
+  <img width="1351" height="677" alt="Screenshot 2025-09-25 at 12 36 03" src="https://github.com/user-attachments/assets/2367c83b-e502-4886-8582-0d40070fe72c" />
+
 
 ### 🚀 How to Use
 
@@ -28,7 +36,7 @@
 
 ### 💻 Technical Details
 
-**Coverly is built with a simple and efficient technology stack:**
+**CoverCraft is built with a simple and efficient technology stack:**
 
 * **HTML5** **: Provides the semantic structure of the application.**
 * **CSS3** **: Handles the styling and responsive layout.**
