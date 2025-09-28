@@ -5,7 +5,7 @@
 body {
   font-family: "Oswald", sans-serif;
   background-size: 400% 400%;
-  background: linear-gradient(to top, #fcfbf2, #ffecb3);
+  background: linear-gradient(to top, #fcfbf2);
   min-height: 100vh;
   padding: 2rem;
   display: flex;
