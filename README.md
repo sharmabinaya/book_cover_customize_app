@@ -21,7 +21,8 @@ Main Screen for the Web App
 
   ## Main Web App
 
-  <img width="1351" height="677" alt="Screenshot 2025-09-25 at 12 36 03" src="https://github.com/user-attachments/assets/2367c83b-e502-4886-8582-0d40070fe72c" />
+
+<img width="1330" height="669" alt="Screenshot 2025-09-28 at 21 54 03" src="https://github.com/user-attachments/assets/3a3199bc-b01e-4700-bb6b-8a27d532718d" />
 
 
 ### 🚀 How to Use
