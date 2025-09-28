@@ -1,7 +1,6 @@
-# 📚Book Cover - Professional Book Cover Generator
+# 📚Book Cover - Professional Personalised  Book Cover Generator
 
-
-<img width="1367" height="671" alt="Screenshot 2025-09-25 at 12 34 57" src="https://github.com/user-attachments/assets/5e897db6-c336-4b10-a7b4-f07aa69249dc" />
+<img width="1328" height="679" alt="Screenshot 2025-09-28 at 21 52 43" src="https://github.com/user-attachments/assets/767ad785-30a5-42f0-9bd1-8f4c5f87a62e" />
 
 Main Screen for the Web App
 
